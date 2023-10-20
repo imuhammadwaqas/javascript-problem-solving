@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-danger">
+    <div class="container p-4">
+      <h2 class="text-center text-bold text-warning">JavaScript Challanges/Task</h2>
+    </div>
+    <div class="container ">
+      <div class="accordion " id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button text-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h4>Calculating Body Mass Index</h4>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <form>
+                <div class="mb-3">
+                  <label for="bodyheight" class="form-label"
+                    >Enter Height (Meter)</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control w-25"
+                    id="bodyheight"
+                  />
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="bodyweight" class="form-label"
+                    >Enter Weight(KG)</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control w-25"
+                    id="bodyweight"
+                  />
+                </div>
+                <div
+                  class="alert alert-info w-25"
+                  role="alert"
+                  id="bmialert"
+                ></div>
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  Onclick="getInputValue()"
+                >
+                  Calculate
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="backcolor">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+           <h4> Choose favorite color and displays a message/backgorund in that
+            Color</h4>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <form>
+                <div class="mb-3">
+                  <label for="colorName" class="form-label"
+                    >Enter your favorite color</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control w-25"
+                    id="colorName"
+                  />
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+           
+                <div
+                  class="alert alert-info w-25"
+                  role="alert"
+                  id="coloralert"
+                ></div>
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  Onclick="changeColor()"
+                >
+                  Show Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+            <h4> Voting Eligibility</h4>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <form>
+                <div class="mb-3">
+                  <label for="age" class="form-label"
+                    >Enter your age</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control w-25"
+                    id="age"
+                  />
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+           
+                <div
+                  class="alert alert-info w-25"
+                  role="alert"
+                  id="agealert"
+                ></div>
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  Onclick="checkEligibility()"
+                >
+                Check Eligibility
+                </button>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
